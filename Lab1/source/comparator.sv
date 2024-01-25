@@ -8,8 +8,8 @@
 // Use a tab size of 2 spaces for best viewing results
 
 
-module comparator
-(
+module comparator(
+
 	input logic [15:0] a,
 	input logic [15:0] b,
 	output logic gt,
@@ -21,22 +21,26 @@ module comparator
 	logic lte;
 
 	always_comb begin: COMPARATOR
-		if (not (a > b))
-			lte <= 1'b1;
-		if (!(b > a)
-			assign gte = 1'b1;
+	    lte = 0;
+		gte = 0;
+		if ((a > b))  
+			lte = 1'b1;
+		if ((a < b))
+		    gte = 1'b1;
 		
-		if (not (lte == 1'b1))
-			GT = 1'b1;
-			LT == 1'b0;
-			EQ = 1'b0;
-		else if (not (gte == 1))
-			GT = 1'b0;
-			LT = 1'b1;
-			EQ = 1'b0;
-		else
-			GT = 1'b0;
-			LT = 1'b0;
-			EQ = 1'b1;
+		if ((lte == 1'b1)) begin
+			gt = 1'b1;
+			lt = 1'b0;
+			eq = 1'b0;
+		end else if ((gte == 1'b1)) begin 
+			gt = 1'b0;
+			lt = 1'b1;
+			eq = 1'b0;
+		end else begin
+			gt = 1'b0;
+			lt = 1'b0;
+			eq = 1'b1;
+               end
 	end
-endmodule;
+endmodule
+
