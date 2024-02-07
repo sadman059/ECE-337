@@ -236,6 +236,112 @@ module tb_stp_sr_4_msb();
 
     // STUDENT TODO: Add more test cases here
 
+    // ************************************************************************
+    // Test Case 4: Normal Operation with Contiguous Zero Fill
+    // ************************************************************************
+     tb_test_num  = tb_test_num + 1;
+    tb_test_case = "Contiguous Zero Fill";
+    // Start out with inactive value and reset the DUT to isolate from prior tests
+    tb_serial_in = 1'b1;
+    reset_dut();
+
+    // Define the test data stream for this test case
+    tb_test_data = {0, 0, 1, 0};
+
+    // Define the expected result
+    tb_expected_ouput = 4'b0010;
+
+    // Contiguously stream enough zeros to fill the shift register
+    send_stream(tb_test_data);
+
+    // Check the result of the full stream
+    check_output("after zero fill stream");
+
+ // ************************************************************************
+    // Test Case 5: Normal Operation with Contiguous Zero Fill
+    // ************************************************************************
+     tb_test_num  = tb_test_num + 1;
+    tb_test_case = "Contiguous Zero Fill";
+    // Start out with inactive value and reset the DUT to isolate from prior tests
+    tb_serial_in = 1'b1;
+    reset_dut();
+
+    // Define the test data stream for this test case
+    tb_test_data = '{1,1,0,1};
+
+    // Define the expected result
+    tb_expected_ouput = 4'b1101;
+
+    // Contiguously stream enough zeros to fill the shift register
+    send_stream(tb_test_data);
+
+    // Check the result of the full stream
+    check_output("after zero fill stream");
+
+
+    // ************************************************************************
+    // Test Case 6: Normal Operation with Contiguous Zero Fill
+    // ************************************************************************
+     tb_test_num  = tb_test_num + 1;
+    tb_test_case = "Contiguous Zero Fill";
+    // Start out with inactive value and reset the DUT to isolate from prior tests
+    tb_serial_in = 1'b1;
+    reset_dut();
+
+    // Define the test data stream for this test case
+    tb_test_data = '{1,0,0,1};
+
+    // Define the expected result
+    tb_expected_ouput = 4'b1001;
+
+    // Contiguously stream enough zeros to fill the shift register
+    send_stream(tb_test_data);
+
+    // Check the result of the full stream
+    check_output("after zero fill stream");
+
+
+    // ************************************************************************
+    // Test Case 7: Normal Operation with Contiguous Zero Fill
+    // ************************************************************************
+     tb_test_num  = tb_test_num + 1;
+    tb_test_case = "Contiguous Zero Fill";
+    // Start out with inactive value and reset the DUT to isolate from prior tests
+    tb_serial_in = 1'b1;
+    reset_dut();
+
+    // Define the test data stream for this test case
+    tb_test_data = '{1,1,1,1};
+
+    // Define the expected result
+    tb_expected_ouput = 4'b1111;
+
+    // Contiguously stream enough zeros to fill the shift register
+    send_stream(tb_test_data);
+
+    // Check the result of the full stream
+    check_output("after zero fill stream");
+    // ************************************************************************
+    // Test Case 8: Normal Operation with Contiguous Zero Fill
+    // ************************************************************************
+     tb_test_num  = tb_test_num + 1;
+    tb_test_case = "Contiguous Zero Fill";
+    // Start out with inactive value and reset the DUT to isolate from prior tests
+    tb_serial_in = 1'b1;
+    reset_dut();
+
+    // Define the test data stream for this test case
+    tb_test_data = '{0,0,1,0};
+
+    // Define the expected result
+    tb_expected_ouput = 4'b0010;
+
+    // Contiguously stream enough zeros to fill the shift register
+    send_stream(tb_test_data);
+
+    // Check the result of the full stream
+    check_output("after zero fill stream");
+
   end
 endmodule
   
