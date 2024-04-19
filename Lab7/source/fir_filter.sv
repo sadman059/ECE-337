@@ -59,8 +59,8 @@ datapath DATAPATH(.clk(clk),
 		.src1(src1),
 		.src2(src2),
 		.dest(dest),
-		.ext_data1(fir_coefficient),
-		.ext_data2(sample_data),
+		.ext_data1(sample_data),
+		.ext_data2(fir_coefficient),
 		.outreg_data(in),
 		.overflow(overflow));
 

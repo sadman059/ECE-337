@@ -31,5 +31,26 @@ AND2X1 A6 (.Y(temp4), .A(a), .B(b));
 AND2X1 A7 (.Y(temp5), .A(temp4), .B(temp3));
 OR2X1  A8 (.Y(carry_out),.A(temp2),.B(temp5));
 
+always @ (a)
+ begin
+    assert((a== 1'b1) || (a == 1'b0))
+    else $error("Input of is not a digital logic value");
+ end
+
+always @ (b)
+ begin
+    assert((b== 1'b1) || (b == 1'b0))
+    else $error("Input of is not a digital logic value");
+ end
+
+always @ (carry_in)
+ begin
+    assert((carry_in== 1'b1) || (carry_in == 1'b0))
+    else $error("Input of is not a digital logic value");
+ end
+
+
+
+
 
 endmodule

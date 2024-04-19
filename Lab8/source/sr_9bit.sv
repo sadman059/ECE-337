@@ -14,6 +14,7 @@ output logic [7:0] packet_data,
 output logic stop_bit
 );
 
+
 flex_stp_sr #(9) dut(.clk(clk),.n_rst(n_rst),.shift_enable(shift_strobe),.serial_in(serial_in),.parallel_out({stop_bit,packet_data}));
 
 

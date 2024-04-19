@@ -1,0 +1,441 @@
+[03/28 14:07:42      0s] 
+[03/28 14:07:42      0s] Cadence Innovus(TM) Implementation System.
+[03/28 14:07:42      0s] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/28 14:07:42      0s] 
+[03/28 14:07:42      0s] Version:	v16.12-s051_1, built Wed Aug 17 12:18:54 PDT 2016
+[03/28 14:07:42      0s] Options:	
+[03/28 14:07:42      0s] Date:		Thu Mar 28 14:07:42 2024
+[03/28 14:07:42      0s] Host:		cparch11.ecn.purdue.edu (x86_64 w/Linux 3.10.0-1160.108.1.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz 8192KB)
+[03/28 14:07:42      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/28 14:07:42      0s] 
+[03/28 14:07:42      0s] License:
+[03/28 14:07:42      0s] 		invs	Innovus Implementation System	16.1	checkout succeeded
+[03/28 14:07:42      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/28 14:07:52      6s] @(#)CDS: Innovus v16.12-s051_1 (64bit) 08/17/2016 12:18 (Linux 2.6.18-194.el5)
+[03/28 14:07:52      6s] @(#)CDS: NanoRoute 16.12-s051_1 NR160816-1350/16_12-UB (database version 2.30, 347.6.1) {superthreading v1.30}
+[03/28 14:07:52      6s] @(#)CDS: AAE 16.12-s026 (64bit) 08/17/2016 (Linux 2.6.18-194.el5)
+[03/28 14:07:52      6s] @(#)CDS: CTE 16.12-s023_1 () Aug 12 2016 01:35:46 ( )
+[03/28 14:07:52      6s] @(#)CDS: SYNTECH 16.12-s009_1 () Aug 11 2016 01:33:09 ( )
+[03/28 14:07:52      6s] @(#)CDS: CPE v16.12-s054
+[03/28 14:07:52      6s] @(#)CDS: IQRC/TQRC 15.2.4-s467 (64bit) Wed Jul 20 17:12:38 PDT 2016 (Linux 2.6.18-194.el5)
+[03/28 14:07:52      6s] @(#)CDS: OA 22.50-p049 Fri Jun 10 10:56:20 2016
+[03/28 14:07:52      6s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/28 14:07:52      6s] @(#)CDS: RCDB 11.8
+[03/28 14:07:52      6s] --- Running on cparch11.ecn.purdue.edu (x86_64 w/Linux 3.10.0-1160.108.1.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz 8192KB) ---
+[03/28 14:07:52      6s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3361_cparch11.ecn.purdue.edu_mg154_gkyHzQ.
+
+[03/28 14:07:53      6s] 
+[03/28 14:07:53      6s] **INFO:  MMMC transition support version v31-84 
+[03/28 14:07:53      6s] 
+[03/28 14:07:53      6s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/28 14:07:53      6s] <CMD> suppressMessage ENCEXT-2799
+[03/28 14:07:53      6s] <CMD> getDrawView
+[03/28 14:07:53      6s] <CMD> loadWorkspace -name Physical
+[03/28 14:07:53      6s] <CMD> win
+[03/28 14:08:05      8s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/28 14:08:05      8s] <CMD> suppressMessage ENCEXT-2799
+[03/28 14:08:05      8s] <CMD> getDrawView
+[03/28 14:08:05      8s] <CMD> loadWorkspace -name Physical
+[03/28 14:08:05      8s] <CMD> win
+[03/28 14:08:05      8s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[03/28 14:08:05      8s] <CMD> set conf_qxconf_file NULL
+[03/28 14:08:05      8s] <CMD> set conf_qxlib_file NULL
+[03/28 14:08:05      8s] <CMD> set defHierChar /
+[03/28 14:08:05      8s] Set Default Input Pin Transition as 0.1 ps.
+[03/28 14:08:05      8s] <CMD> set delaycal_input_transition_delay 0.1ps
+[03/28 14:08:05      8s] <CMD> set distributed_client_message_echo 1
+[03/28 14:08:05      8s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[03/28 14:08:05      8s] <CMD> set floorplan_default_site core
+[03/28 14:08:05      8s] <CMD> set fpIsMaxIoHeight 0
+[03/28 14:08:05      8s] <CMD> set init_gnd_net gnd
+[03/28 14:08:05      8s] <CMD> set init_io_file innovus.io
+[03/28 14:08:05      8s] <CMD> set init_lef_file {/package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.lef /package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.stacks.lef}
+[03/28 14:08:05      8s] <CMD> set init_mmmc_file osu05_MMMC.view
+[03/28 14:08:05      8s] <CMD> set init_oa_search_lib {}
+[03/28 14:08:05      8s] <CMD> set init_pwr_net vdd
+[03/28 14:08:05      8s] <CMD> set init_verilog mapped/layout_lab_design.v
+[03/28 14:08:05      8s] <CMD> set latch_time_borrow_mode max_borrow
+[03/28 14:08:05      8s] <CMD> set pegDefaultResScaleFactor 1
+[03/28 14:08:05      8s] <CMD> set pegDetailResScaleFactor 1
+[03/28 14:08:05      8s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[03/28 14:08:05      8s] <CMD> set timing_library_ccs_noise_vin_clip_points {}
+[03/28 14:08:05      8s] <CMD> set timing_library_ccs_noise_vout_clip_points {}
+[03/28 14:08:05      8s] <CMD> set timing_library_load_pin_cap_indices {}
+[03/28 14:08:05      8s] <CMD> set timing_library_write_library_to_directory {}
+[03/28 14:08:05      8s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[03/28 14:08:05      8s] <CMD> init_design
+[03/28 14:08:05      8s] #- Begin Load MMMC data ... (date=03/28 14:08:05, mem=488.5M)
+[03/28 14:08:05      8s] #- End Load MMMC data ... (date=03/28 14:08:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=488.5M, current mem=488.5M)
+[03/28 14:08:05      8s] **WARN: (GLOBAL-100):	Global 'timing_disable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[03/28 14:08:05      8s] 
+[03/28 14:08:05      8s] Loading LEF file /package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.lef ...
+[03/28 14:08:05      8s] **WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+[03/28 14:08:05      8s] so you are unable to create rectilinear partition in a hierarchical flow.
+[03/28 14:08:05      8s] Set DBUPerIGU to M2 pitch 2400.
+[03/28 14:08:05      8s] 
+[03/28 14:08:05      8s] Loading LEF file /package/eda/cells/OSU/v2.7/cadence/lib/ami05/lib/osu05_stdcells.stacks.lef ...
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'nwell' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'nactive' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'pactive' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'cc' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'via' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-119' for more detail.
+[03/28 14:08:05      8s] **ERROR: (IMPLF-223):	The LEF via 'M2_M1' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-223' for more detail.
+[03/28 14:08:05      8s] **ERROR: (IMPLF-223):	The LEF via 'M3_M2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-223' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-151):	The viaRule 'viagen21' has been defined, the content will be skipped.
+[03/28 14:08:05      8s] **WARN: (IMPLF-151):	The viaRule 'viagen32' has been defined, the content will be skipped.
+[03/28 14:08:05      8s] **WARN: (IMPLF-151):	The viaRule 'TURN1' has been defined, the content will be skipped.
+[03/28 14:08:05      8s] **WARN: (IMPLF-151):	The viaRule 'TURN2' has been defined, the content will be skipped.
+[03/28 14:08:05      8s] **WARN: (IMPLF-151):	The viaRule 'TURN3' has been defined, the content will be skipped.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'FILL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'AND2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'AND2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'AOI21X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'AOI22X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'BUFX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'BUFX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'DFFNEGX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'NOR3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'DFFPOSX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'FAX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'HAX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'INVX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'INVX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'INVX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'INVX8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'NAND2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'NAND3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'NOR2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPLF-58):	MACRO 'OAI21X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-58' for more detail.
+[03/28 14:08:05      8s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[03/28 14:08:05      8s] To increase the message display limit, refer to the product command reference manual.
+[03/28 14:08:05      8s] **WARN: (IMPLF-61):	40 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[03/28 14:08:05      8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/28 14:08:05      8s] Type 'man IMPLF-61' for more detail.
+[03/28 14:08:05      8s] 
+[03/28 14:08:05      8s] viaInitial starts at Thu Mar 28 14:08:05 2024
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+[03/28 14:08:05      8s] Type 'man IMPPP-557' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+[03/28 14:08:05      8s] Type 'man IMPPP-557' for more detail.
+[03/28 14:08:05      8s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+[03/28 14:08:05      8s] Type 'man IMPPP-557' for more detail.
+[03/28 14:08:05      8s] viaInitial ends at Thu Mar 28 14:08:05 2024
+Loading view definition file from osu05_MMMC.view
+[03/28 14:08:05      8s] Reading OSUv2.7 timing library '/package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib' ...
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] **WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library. (File /package/eda/cells/OSU/v2.7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+[03/28 14:08:05      8s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[03/28 14:08:05      8s] Read 39 cells in library 'osu05_stdcells' 
+[03/28 14:08:05      8s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.15min, fe_real=0.38min, fe_mem=509.7M) ***
+[03/28 14:08:05      8s] #- Begin Load netlist data ... (date=03/28 14:08:05, mem=509.7M)
+[03/28 14:08:05      8s] *** Begin netlist parsing (mem=509.7M) ***
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADGND' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'PADGND' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADVDD' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'PADVDD' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+[03/28 14:08:05      8s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/28 14:08:05      8s] To increase the message display limit, refer to the product command reference manual.
+[03/28 14:08:05      8s] Created 39 new cells from 1 timing libraries.
+[03/28 14:08:05      8s] Reading netlist ...
+[03/28 14:08:05      8s] Backslashed names will retain backslash and a trailing blank character.
+[03/28 14:08:05      8s] Reading verilog netlist 'mapped/layout_lab_design.v'
+[03/28 14:08:05      8s] 
+[03/28 14:08:05      8s] *** Memory Usage v#1 (Current mem = 509.660M, initial mem = 163.832M) ***
+[03/28 14:08:05      8s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=509.7M) ***
+[03/28 14:08:05      8s] #- End Load netlist data ... (date=03/28 14:08:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=509.7M, current mem=509.7M)
+[03/28 14:08:05      8s] Top level cell is layout_lab_design.
+[03/28 14:08:05      9s] **WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADGND' in timing library 'osu05_stdcells'.
+[03/28 14:08:05      9s] **WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADVDD' in timing library 'osu05_stdcells'.
+[03/28 14:08:05      9s] Hooked 39 DB cells to tlib cells.
+[03/28 14:08:05      9s] Starting recursive module instantiation check.
+[03/28 14:08:05      9s] No recursion found.
+[03/28 14:08:05      9s] Building hierarchical netlist for Cell layout_lab_design ...
+[03/28 14:08:05      9s] *** Netlist is unique.
+[03/28 14:08:05      9s] ** info: there are 56 modules.
+[03/28 14:08:05      9s] ** info: there are 668 stdCell insts.
+[03/28 14:08:05      9s] ** info: there are 16 Pad insts.
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] *** Memory Usage v#1 (Current mem = 545.422M, initial mem = 163.832M) ***
+[03/28 14:08:05      9s] Reading IO assignment file "innovus.io" ...
+[03/28 14:08:05      9s] **WARN: (IMPFP-3961):	The techSite 'IO' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/28 14:08:05      9s] Type 'man IMPFP-3961' for more detail.
+[03/28 14:08:05      9s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/28 14:08:05      9s] Type 'man IMPFP-3961' for more detail.
+[03/28 14:08:05      9s] Horizontal Layer M1 offset = 1500 (derived)
+[03/28 14:08:05      9s] Vertical Layer M2 offset = 1200 (derived)
+[03/28 14:08:05      9s] Set Default Net Delay as 1000 ps.
+[03/28 14:08:05      9s] Set Default Net Load as 0.5 pF. 
+[03/28 14:08:05      9s] Set Default Input Pin Transition as 0.1 ps.
+[03/28 14:08:05      9s] Extraction setup Started 
+[03/28 14:08:05      9s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[03/28 14:08:05      9s] Reading Capacitance Table File osu05.capTbl ...
+[03/28 14:08:05      9s] Process name: DIFFERENT_KINDS_OF_DIELECTRIC.
+[03/28 14:08:05      9s] Importing multi-corner RC tables ... 
+[03/28 14:08:05      9s] Summary of Active RC-Corners : 
+[03/28 14:08:05      9s]  
+[03/28 14:08:05      9s]  Analysis View: osu05
+[03/28 14:08:05      9s]     RC-Corner Name        : osu05
+[03/28 14:08:05      9s]     RC-Corner Index       : 0
+[03/28 14:08:05      9s]     RC-Corner Temperature : 30 Celsius
+[03/28 14:08:05      9s]     RC-Corner Cap Table   : 'osu05.capTbl'
+[03/28 14:08:05      9s]     RC-Corner PreRoute Res Factor         : 1
+[03/28 14:08:05      9s]     RC-Corner PreRoute Cap Factor         : 1
+[03/28 14:08:05      9s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/28 14:08:05      9s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/28 14:08:05      9s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/28 14:08:05      9s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/28 14:08:05      9s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/28 14:08:05      9s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/28 14:08:05      9s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/28 14:08:05      9s] *Info: initialize multi-corner CTS.
+[03/28 14:08:05      9s] Reading timing constraints file 'prects.sdc' ...
+[03/28 14:08:05      9s] Current (total cpu=0:00:09.2, real=0:00:23.0, peak res=212.6M, current mem=661.5M)
+[03/28 14:08:05      9s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File prects.sdc, Line 14).
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] INFO (CTE): Reading of timing constraints file prects.sdc completed, with 1 WARNING
+[03/28 14:08:05      9s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=227.9M, current mem=677.7M)
+[03/28 14:08:05      9s] Current (total cpu=0:00:09.3, real=0:00:23.0, peak res=227.9M, current mem=677.7M)
+[03/28 14:08:05      9s] Reading timing constraints file 'postcts.sdc' ...
+[03/28 14:08:05      9s] Current (total cpu=0:00:09.3, real=0:00:23.0, peak res=227.9M, current mem=677.7M)
+[03/28 14:08:05      9s] Resetting all latency settings from fanout cone of clock 'clk' (File postcts.sdc, Line 2).
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] INFO (CTE): Constraints read successfully.
+[03/28 14:08:05      9s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=239.8M, current mem=690.0M)
+[03/28 14:08:05      9s] Current (total cpu=0:00:09.3, real=0:00:23.0, peak res=239.8M, current mem=690.0M)
+[03/28 14:08:05      9s] Summary for sequential cells idenfication: 
+[03/28 14:08:05      9s] Identified SBFF number: 3
+[03/28 14:08:05      9s] Identified MBFF number: 0
+[03/28 14:08:05      9s] Not identified SBFF number: 0
+[03/28 14:08:05      9s] Not identified MBFF number: 0
+[03/28 14:08:05      9s] Number of sequential cells which are not FFs: 1
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] Total number of combinational cells: 26
+[03/28 14:08:05      9s] Total number of sequential cells: 4
+[03/28 14:08:05      9s] Total number of tristate cells: 2
+[03/28 14:08:05      9s] Total number of level shifter cells: 0
+[03/28 14:08:05      9s] Total number of power gating cells: 0
+[03/28 14:08:05      9s] Total number of isolation cells: 0
+[03/28 14:08:05      9s] Total number of power switch cells: 0
+[03/28 14:08:05      9s] Total number of pulse generator cells: 0
+[03/28 14:08:05      9s] Total number of always on buffers: 0
+[03/28 14:08:05      9s] Total number of retention cells: 0
+[03/28 14:08:05      9s] List of usable buffers: BUFX2 BUFX4 CLKBUF1
+[03/28 14:08:05      9s] Total number of usable buffers: 3
+[03/28 14:08:05      9s] List of unusable buffers:
+[03/28 14:08:05      9s] Total number of unusable buffers: 0
+[03/28 14:08:05      9s] List of usable inverters: INVX2 INVX1 INVX4 INVX8
+[03/28 14:08:05      9s] Total number of usable inverters: 4
+[03/28 14:08:05      9s] List of unusable inverters:
+[03/28 14:08:05      9s] Total number of unusable inverters: 0
+[03/28 14:08:05      9s] List of identified usable delay cells: CLKBUF2 CLKBUF3
+[03/28 14:08:05      9s] Total number of identified usable delay cells: 2
+[03/28 14:08:05      9s] List of identified unusable delay cells:
+[03/28 14:08:05      9s] Total number of identified unusable delay cells: 0
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] *** Summary of all messages that are not suppressed in this session:
+[03/28 14:08:05      9s] Severity  ID               Count  Summary                                  
+[03/28 14:08:05      9s] WARNING   IMPLF-151            5  The viaRule '%s' has been defined, the c...
+[03/28 14:08:05      9s] WARNING   IMPLF-58            40  MACRO '%s' has been found in the databas...
+[03/28 14:08:05      9s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[03/28 14:08:05      9s] ERROR     IMPLF-223            2  The LEF via '%s' has been defined and fo...
+[03/28 14:08:05      9s] WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+[03/28 14:08:05      9s] WARNING   IMPLF-119           10  LAYER '%s' has been found in the databas...
+[03/28 14:08:05      9s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[03/28 14:08:05      9s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+[03/28 14:08:05      9s] WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+[03/28 14:08:05      9s] WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+[03/28 14:08:05      9s] *** Message Summary: 132 warning(s), 2 error(s)
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] <CMD> floorPlan -r 1.0 0.6 50 50 50 50
+[03/28 14:08:05      9s] Snap core to left to manufacture grid: 49.9500.
+[03/28 14:08:05      9s] Snap core to bottom to manufacture grid: 49.9500.
+[03/28 14:08:05      9s] Snap core to right to manufacture grid: 49.9500.
+[03/28 14:08:05      9s] Snap core to top to manufacture grid: 49.9500.
+[03/28 14:08:05      9s] Horizontal Layer M1 offset = 1500 (derived)
+[03/28 14:08:05      9s] Vertical Layer M2 offset = 1200 (derived)
+[03/28 14:08:05      9s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[03/28 14:08:05      9s] <CMD> unfixAllIos
+[03/28 14:08:05      9s] <CMD> legalizePin
+[03/28 14:08:05      9s] #- Begin legalizePin (date=03/28 14:08:05, mem=698.0M)
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] Start pin legalization for the partition [layout_lab_design]:
+[03/28 14:08:05      9s] Summary report for top level: [layout_lab_design] 
+[03/28 14:08:05      9s] 	Total Pads                         : 16
+[03/28 14:08:05      9s] 	Total Pins                         : 0
+[03/28 14:08:05      9s] 	Legally Assigned Pins              : 0
+[03/28 14:08:05      9s] 	Illegally Assigned Pins            : 0
+[03/28 14:08:05      9s] 	Unplaced Pins                      : 0
+[03/28 14:08:05      9s] 	Constant/Spl Net Pins              : 0
+[03/28 14:08:05      9s] 	Internal Pins                      : 0
+[03/28 14:08:05      9s] 	Legally Assigned Feedthrough Pins  : 0
+[03/28 14:08:05      9s] 	Illegally Assigned Feedthrough Pins: 0
+[03/28 14:08:05      9s] End of Summary report
+[03/28 14:08:05      9s] End pin legalization for the partition [layout_lab_design].
+[03/28 14:08:05      9s] 
+[03/28 14:08:05      9s] #- End legalizePin (date=03/28 14:08:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=698.0M, current mem=698.0M)
+[03/28 14:08:19     11s] <CMD> addRing -spacing_bottom 9.9 -width_left 9.9 -width_bottom 9.9 -width_top 9.9 -spacing_top 9.9 -layer_bottom metal1 -width_right 9.9 -around default_power_domain -center 1 -layer_top metal1 -spacing_right 9.9 -spacing_left 9.9 -layer_right metal2 -layer_left metal2 -offset 9.9 -nets { gnd vdd }
+[03/28 14:08:19     11s] #- Begin addRing (date=03/28 14:08:19, mem=816.9M)
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-spacing_bottom" is obsolete and has been replaced by "-spacing". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-spacing"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-width_left" is obsolete and has been replaced by "-width". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-width"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-width_bottom" is obsolete and has been replaced by "-width". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-width"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-width_top" is obsolete and has been replaced by "-width". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-width"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-spacing_top" is obsolete and has been replaced by "-spacing". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-spacing"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-layer_bottom" is obsolete and has been replaced by "-layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-layer"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-width_right" is obsolete and has been replaced by "-width". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-width"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-layer_top" is obsolete and has been replaced by "-layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-layer"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-spacing_right" is obsolete and has been replaced by "-spacing". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-spacing"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-spacing_left" is obsolete and has been replaced by "-spacing". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-spacing"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-layer_right" is obsolete and has been replaced by "-layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-layer"..
+[03/28 14:08:19     11s] **WARN: (IMPPP-4022):	Option "-layer_left" is obsolete and has been replaced by "-layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-layer"..
+[03/28 14:08:19     11s] 
+[03/28 14:08:19     11s] Ring generation is complete; vias are now being generated.
+[03/28 14:08:19     11s] addRing created 8 wires.
+[03/28 14:08:19     11s] ViaGen created 8 vias and deleted 0 via to avoid violation.
+[03/28 14:08:19     11s] +--------+----------------+----------------+
+[03/28 14:08:19     11s] |  Layer |     Created    |     Deleted    |
+[03/28 14:08:19     11s] +--------+----------------+----------------+
+[03/28 14:08:19     11s] | metal1 |        4       |       NA       |
+[03/28 14:08:19     11s] |   via  |        8       |        0       |
+[03/28 14:08:19     11s] | metal2 |        4       |       NA       |
+[03/28 14:08:19     11s] +--------+----------------+----------------+
+[03/28 14:08:20     11s] #- End addRing (date=03/28 14:08:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=817.9M, current mem=817.9M)
+[03/28 14:08:48     16s] <CMD> selectWire 330.1500 330.4500 1169.8500 340.3500 1 gnd
+[03/28 14:10:37     34s] <CMD> deselectAll
+[03/28 14:10:37     34s] <CMD> selectWire 330.1500 330.4500 1169.8500 340.3500 1 gnd
+[03/28 14:10:41     35s] <CMD> deselectAll
+[03/28 14:10:42     35s] <CMD> selectWire 330.1500 330.4500 1169.8500 340.3500 1 gnd
+[03/28 14:10:43     35s] <CMD> deselectAll
+[03/28 14:10:44     35s] <CMD> selectWire 310.3500 310.6500 1189.6500 320.5500 1 vdd
+[03/28 14:10:47     36s] <CMD> deselectAll
+[03/28 14:10:47     36s] <CMD> selectWire 330.1500 330.4500 1169.8500 340.3500 1 gnd
+[03/28 14:10:48     36s] <CMD> deselectAll
+[03/28 14:10:48     36s] <CMD> selectWire 310.3500 310.6500 1189.6500 320.5500 1 vdd
+[03/28 14:10:52     37s] <CMD> deselectAll
+[03/28 14:10:52     37s] <CMD> selectWire 330.1500 330.4500 1169.8500 340.3500 1 gnd
+[03/28 14:10:57     37s] <CMD> fit
+[03/28 14:11:37     45s] <CMD> deselectAll
+[03/28 14:11:37     45s] <CMD> selectWire 330.1500 330.4500 340.0500 1160.5500 2 gnd
+[03/28 14:11:53     48s] <CMD> uiSetTool ruler
+[03/28 14:12:15     52s] <CMD> uiSetTool ruler
+[03/28 14:12:36     56s] <CMD> fit
+[03/28 14:19:06    127s] 
+[03/28 14:19:06    127s] *** Memory Usage v#1 (Current mem = 818.891M, initial mem = 163.832M) ***
+[03/28 14:19:06    127s] 
+[03/28 14:19:06    127s] *** Summary of all messages that are not suppressed in this session:
+[03/28 14:19:06    127s] Severity  ID               Count  Summary                                  
+[03/28 14:19:06    127s] WARNING   IMPLF-151            5  The viaRule '%s' has been defined, the c...
+[03/28 14:19:06    127s] WARNING   IMPLF-58            40  MACRO '%s' has been found in the databas...
+[03/28 14:19:06    127s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[03/28 14:19:06    127s] ERROR     IMPLF-223            2  The LEF via '%s' has been defined and fo...
+[03/28 14:19:06    127s] WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+[03/28 14:19:06    127s] WARNING   IMPLF-119           10  LAYER '%s' has been found in the databas...
+[03/28 14:19:06    127s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[03/28 14:19:06    127s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[03/28 14:19:06    127s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+[03/28 14:19:06    127s] WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+[03/28 14:19:06    127s] WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+[03/28 14:19:06    127s] WARNING   IMPPP-4022          12  Option "-%s" is obsolete and has been re...
+[03/28 14:19:06    127s] *** Message Summary: 145 warning(s), 2 error(s)
+[03/28 14:19:06    127s] 
+[03/28 14:19:06    127s] --- Ending "Innovus" (totcpu=0:02:08, real=0:11:24, mem=818.9M) ---

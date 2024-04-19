@@ -11,48 +11,34 @@ module moore(
  input logic i,
  output logic o
 );
-logic [3:0] next;
-logic [3:0] state;
+ logic [2:0] next_state;
+ logic [2:0] state;
 
-always_comb begin : next_state_logic
-    next = '0;
-    case (next)
-     4'b0000 : if(i == 1) begin
-        next = next << 1;
-        nexxt[0] = i;
-     end
-     4'b0001 : if(i == 1) begin
-        next = next << 1;
-        nexxt[0] = i;
-     end
-     4'b0011 : if(i == 0) begin
-        next = next << 1;
-        nexxt[0] = i;
-     end
-     4'b0110 : if(i == 1) begin
-        next = next << 1;
-        nexxt[0] = i;
-     end
-     4'b1101 : 
-    endcase
+typedef enum bit [2:0] {IDLE, STATE_1, STATE_2, STATE_3, SUCCESS} stateType;
+	
+always_comb begin: NXT_LOGIC
+	next_state = state;
+	case(state)
+		IDLE: next_state = i ? STATE_1 : IDLE;
+		STATE_1: next_state = i ? STATE_2 : IDLE;
+		STATE_2: next_state = i ? STATE_2 : STATE_3;
+		STATE_3: next_state = i ? SUCCESS : IDLE;
+		SUCCESS: next_state = i ? STATE_2 : IDLE;
+	endcase
 end
 
-always_ff @( posedge clk, negedge n_rst ) begin : flipflop
-    if(n_rst == 0) begin
-        state <= '0;
-    end else begin
-        state <= next;
-    end
+always_ff @(posedge clk, negedge n_rst) begin: REG_LOGIC
+	if(!n_rst)
+		state <= IDLE;
+	else
+		state <= next_state;
 end
 
-always_comb begin : output_logic
-   if(state == 4'b1101) begin
-    o = 1;
-end else begin
-    o = 0;
-    end   
+always_comb begin: OUT_LOGIC
+	o = 1'b0;
+	if(state == SUCCESS)
+		o = 1'b1;
 end
-
 
 
 endmodule

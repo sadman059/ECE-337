@@ -288,6 +288,7 @@ module tb_fir_filter();
 		end
 		
 		// TODO: Add non standard test cases here
+		$finish;
 		
 	end
 endmodule
